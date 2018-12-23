@@ -17,7 +17,6 @@
 		C638FB1721C8AD7F0008E623 /* Code_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C638FB1621C8AD7F0008E623 /* Code_TestTests.swift */; };
 		C638FB2221C8AD7F0008E623 /* Code_TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C638FB2121C8AD7F0008E623 /* Code_TestUITests.swift */; };
 		C638FB3121C8BA2C0008E623 /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C638FB3021C8BA2C0008E623 /* ListController.swift */; };
-		C638FB3321C8BB180008E623 /* DetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C638FB3221C8BB180008E623 /* DetailsController.swift */; };
 		C638FB3621C8C0930008E623 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = C638FB3521C8C0930008E623 /* Person.swift */; };
 		C638FB3A21C8C1A60008E623 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C638FB3921C8C1A60008E623 /* CloudKit.framework */; };
 		C638FB3D21C952060008E623 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C638FB3C21C952060008E623 /* R.generated.swift */; };
@@ -65,7 +64,6 @@
 		C638FB2121C8AD7F0008E623 /* Code_TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Code_TestUITests.swift; sourceTree = "<group>"; };
 		C638FB2321C8AD7F0008E623 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C638FB3021C8BA2C0008E623 /* ListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
-		C638FB3221C8BB180008E623 /* DetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsController.swift; sourceTree = "<group>"; };
 		C638FB3521C8C0930008E623 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		C638FB3721C8C19C0008E623 /* Code Test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Code Test.entitlements"; sourceTree = "<group>"; };
 		C638FB3921C8C1A60008E623 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
@@ -177,7 +175,6 @@
 			isa = PBXGroup;
 			children = (
 				C638FB3021C8BA2C0008E623 /* ListController.swift */,
-				C638FB3221C8BB180008E623 /* DetailsController.swift */,
 				C638FB4521C9F1F60008E623 /* AddPersonController.swift */,
 			);
 			path = Contollers;
@@ -436,7 +433,6 @@
 				C638FB4221C9C04C0008E623 /* ItemViewCell.swift in Sources */,
 				C638FAFF21C8AD7D0008E623 /* AppDelegate.swift in Sources */,
 				C638FB4621C9F1F60008E623 /* AddPersonController.swift in Sources */,
-				C638FB3321C8BB180008E623 /* DetailsController.swift in Sources */,
 				C638FB0721C8AD7D0008E623 /* Code_Test.xcdatamodeld in Sources */,
 				C638FB3121C8BA2C0008E623 /* ListController.swift in Sources */,
 				C638FB4C21CC00A40008E623 /* Address.swift in Sources */,

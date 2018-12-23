@@ -142,12 +142,17 @@ struct _R: Rswift.Validatable {
       typealias InitialController = UIKit.UINavigationController
       
       let bundle = R.hostingBundle
-      let details = StoryboardViewControllerResource<UIKit.UIViewController>(identifier: "details")
+      let listOfPerson = StoryboardViewControllerResource<ListController>(identifier: "ListOfPerson")
+      let listOfPersonNav = StoryboardViewControllerResource<UIKit.UINavigationController>(identifier: "ListOfPersonNav")
       let name = "Main"
       let newPerson = StoryboardViewControllerResource<AddPersonController>(identifier: "NewPerson")
       
-      func details(_: Void = ()) -> UIKit.UIViewController? {
-        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: details)
+      func listOfPerson(_: Void = ()) -> ListController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: listOfPerson)
+      }
+      
+      func listOfPersonNav(_: Void = ()) -> UIKit.UINavigationController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: listOfPersonNav)
       }
       
       func newPerson(_: Void = ()) -> AddPersonController? {
@@ -157,8 +162,9 @@ struct _R: Rswift.Validatable {
       static func validate() throws {
         if #available(iOS 11.0, *) {
         }
+        if _R.storyboard.main().listOfPerson() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'listOfPerson' could not be loaded from storyboard 'Main' as 'ListController'.") }
+        if _R.storyboard.main().listOfPersonNav() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'listOfPersonNav' could not be loaded from storyboard 'Main' as 'UIKit.UINavigationController'.") }
         if _R.storyboard.main().newPerson() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'newPerson' could not be loaded from storyboard 'Main' as 'AddPersonController'.") }
-        if _R.storyboard.main().details() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'details' could not be loaded from storyboard 'Main' as 'UIKit.UIViewController'.") }
       }
       
       fileprivate init() {}

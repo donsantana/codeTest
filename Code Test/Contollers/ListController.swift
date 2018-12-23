@@ -122,9 +122,7 @@ class ListController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
     }
     
-    
-    
-    
+
     //BUTTONS ACTIONS
     @IBAction func addNewPerson(_ sender: Any) {
         print("herer")
