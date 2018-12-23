@@ -1,0 +1,47 @@
+PODS:
+  - Canvas (0.1.2)
+  - MaterialComponents/AnimationTiming (72.2.0)
+  - MaterialComponents/Palettes (72.2.0)
+  - MaterialComponents/private/Application (72.2.0)
+  - MaterialComponents/private/Math (72.2.0)
+  - MaterialComponents/TextFields (72.2.0):
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/Palettes
+    - MaterialComponents/private/Math
+    - MaterialComponents/Typography
+    - MDFInternationalization
+  - MaterialComponents/Typography (72.2.0):
+    - MaterialComponents/private/Application
+    - MaterialComponents/private/Math
+  - MDFInternationalization (2.0.0)
+  - R.swift (5.0.0.alpha.3):
+    - R.swift.Library (~> 5.0.0.alpha.2)
+  - R.swift.Library (5.0.0)
+  - TextFieldEffects (1.5.1)
+
+DEPENDENCIES:
+  - Canvas
+  - MaterialComponents/TextFields
+  - R.swift (= 5.0.0.alpha.3)
+  - TextFieldEffects
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Canvas
+    - MaterialComponents
+    - MDFInternationalization
+    - R.swift
+    - R.swift.Library
+    - TextFieldEffects
+
+SPEC CHECKSUMS:
+  Canvas: eb861e3b555d032648146c8ffda1a5dea40059ca
+  MaterialComponents: d1637df9976683348de8eabd10de0723ec81db3d
+  MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
+  R.swift: ca4207ecc94545a1611ca0b2ae1197458b6ba30a
+  R.swift.Library: 0bf390e729bc10bb2c9e4fb78bd043164a7be4ff
+  TextFieldEffects: 7d372f58aeaf9acd9626bbf962680aef926b085d
+
+PODFILE CHECKSUM: 050ed32b422d238c662fe1994f8f7f2499233664
+
+COCOAPODS: 1.6.0.beta.2
